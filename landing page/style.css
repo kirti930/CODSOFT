@@ -83,7 +83,7 @@ nav ul li a {
   display: inline-block;
 }
 
-.features {
+.facility {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
@@ -92,7 +92,7 @@ nav ul li a {
   text-align: center;
 }
 
-.features div {
+.facility div {
   width: 30%;
 }
 
