@@ -1,0 +1,149 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f9;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: linear-gradient(135deg, #2a2a72, #009ffd);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  min-height: 1.5em;
+}
+
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  color: #2a2a72;
+  border-bottom: 2px solid #009ffd;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills li {
+  background: #009ffd;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.project {
+  background: white;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #009ffd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.resume a {
+  display: inline-block;
+  margin-left: 40px;
+  padding: 10px 20px;
+  background: #2a2a72;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2a2a72;
+  color: white;
+  margin-top: 40px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* Dark Mode Styling */
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+body.dark header {
+  background: linear-gradient(135deg, #1e1e1e, #444);
+}
+
+body.dark h2 {
+  color: #ffa500;
+  border-color: #ffa500;
+}
+
+body.dark .project {
+  background: #1e1e1e;
+  color: #ddd;
+  border-color: #ffa500;
+}
+
+body.dark .skills li {
+  background: #ffa500;
+  color: #1e1e1e;
+}
+
+body.dark .resume a {
+  background: #ffa500;
+  color: #1e1e1e;
+}
+
+body.dark footer {
+  background: #1e1e1e;
+  color: #ccc;
+}
